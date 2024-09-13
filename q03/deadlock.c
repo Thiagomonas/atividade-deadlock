@@ -73,10 +73,10 @@ void *processoB(void  *args){
     sleep(1);
 
     pthread_mutex_unlock(&recB);
-    printf("thread A liberou recurso B\n");
+    printf("thread B liberou recurso B\n");
 
     pthread_mutex_unlock(&recA);
-    printf("thread A liberou recurso A\n");
+    printf("thread B liberou recurso A\n");
 }
 
 int main(){
